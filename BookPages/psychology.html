@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge World</title>
+    <link rel="stylesheet" href="../CSS/navi.css">
+    <link rel="stylesheet" href="../CSS/psychology.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">KnowledgeWorld</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../About/portfolio.html">About</a></li>
+            <li><a href="../Login/contact.html">Contact</a></li>
+            <li><a href="#"><div class="menu-container">
+            <div class="dropdown" id="discover-dropdown">
+               <button class="dropbtn">Discover</button>
+                
+                <div class="dropdown-content" id="discover-content">
+                  <a href="romance.html">Romance</a>
+                    <a href="action.html">Action</a>
+                    <a href="mystery.html">Mystery & Thriller</a>
+                    <a href="fantasy.html">Fantasy</a>
+                    <a href="history.html">Historical Fiction</a>
+                    <a href="horror.html">Horror</a>
+                    <a href="psychology.html">Psychology</a>
+                    <a href="science.html">Science-Fiction</a>
+
+               </div>
+            </div>
+        </div></a></li>
+            <li><a href="../Login/login.html">Login</a></li>
+             <div class="search-container">
+                <input type="text" id="search-bar" style="width:300px" placeholder="Search books...">
+                <button id="search-button">Search</button>
+            </div>
+        
+        </ul>
+    </nav>
+
+    <img id="a" src="../img/psychology2.jpg">
+    <h1>Psychology Book Collections</h1>
+
+    <div class="roman">
+
+        <div class="book">
+            <img src="../img/psychologybook.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">The Upside of Stress</h4>
+                <p class="writter">Kelly McGonigal, PH.D</p>
+                <a class="book-btn" href="psychologybook1.html">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/psychologybook2.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">Thinking Fast and Slow</h4>
+                <p class="writter">Daniel Khaneman</p>
+                <a class="book-btn" href="psychologybook2.html">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/psychologybook3.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">Noise: A Flaw in Human Judgment</h4>
+                <p class="writter">Daniel Khaneman</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/psychologybook4.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">Abnormal Psychology</h4>
+                <p class="writter">David H.Rarlow <br>V. Mark Durand</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/psychologybook5.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">How to Overcome Your Obsession and Complusions</h4>
+                <p class="writter">EDNA B.FOA,Ph.D <br> & REID WILSON,Ph.D</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/psychologybook6.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">Awakenings</h4>
+                <p class="writter">Oliver Sacks</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/psychologybook7.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">Read People Like a Book</h4>
+                <p class="writter">Patrick King</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/psychologybook8.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">Persuasion Tactics Covert Psychology Strateigies To</h4>
+                <p class="writter">Patrick King</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/psychologybook9.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">The Science of Likability</h4>
+                <p class="writter">Pat  rick King</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+    </div>
+
+     <div class="kyaw1">
+
+        <div class="kyaw2">
+            <button class="btn1" onclick="backBtn()"> <img src="../img/images.png">prev </button>
+            <ul>
+                <li id="bli" class="link active" value="1" onclick="activelink()">1</li>
+                <li id="bli" class="link" value="2" onclick="activelink()">2</li>
+                <li id="bli" class="link" value="3" onclick="activelink()">3</li>
+                <li id="bli" class="link" value="4" onclick="activelink()">4</li>
+                <li id="bli" class="link" value="5" onclick="activelink()">5</li>
+                <li id="bli" class="link" value="6" onclick="activelink()">6</li>
+                <li id="bli" class="link" value="7" onclick="activelink()">7</li>
+                <li id="bli" class="link" value="8" onclick="activelink()">8</li>   
+            </ul>
+            <button class="btn11" onclick="nextBtn()"> next <img src="../img/images.png"></button>
+        </div>
+    </div>
+
+    <script>
+
+    let link = document.getElementsByClassName("link");
+
+    let currentValue = 1;
+
+    function activelink(){
+        for (l of link){
+            l.classList.remove("active");
+        }
+        event.target.classList.add("active");
+        currentValue = event.target.value;
+    }
+
+    function backBtn(){
+        if(currentValue > 1){
+            for (l of link){
+            l.classList.remove("active");
+            }
+            currentValue--;
+            link[currentValue-1].classList.add("active");
+        }
+    }
+
+    function nextBtn(){
+        if(currentValue < 8){
+            for (l of link){
+            l.classList.remove("active");
+            }
+            currentValue++;
+            link[currentValue-1].classList.add("active");
+        }
+    }
+    </script>
+</body>
+</html>

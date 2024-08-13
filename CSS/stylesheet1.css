@@ -1,0 +1,126 @@
+*{ 
+    padding : 0; 
+    margin : 0 ; 
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body{ 
+    display : flex; 
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width : 100%; 
+    padding : 0 10px; 
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg.jpg"), #000;
+    background-position: center;
+    background-size: cover;
+  }
+
+
+
+.wrapper{ 
+    width :400px; 
+    border-radius: 8px;
+    padding:30px; 
+    text-align: center;
+    border : 1px solid rgba(255,255,255,0.5); 
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+}
+
+form{ 
+    display:flex; 
+    flex-direction: column;
+}
+
+h2{ 
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:whitesmoke;
+}
+
+.inputfield{ 
+    position: relative;
+    border-bottom:2px solid #ccc;
+    margin: 15px 0 ; 
+}
+
+.inputfield label{ 
+    position: absolute; 
+    top:20%; 
+    left:0; 
+    transform: translateY(-50%);
+    color:#fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.inputfield input { 
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none; 
+    outline: none;
+    font-size: 16px;
+    color:#fff; 
+}
+
+.inputfield input{ 
+    width : 100%; 
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline:none; 
+    font-size: 20px; 
+    color :whitesmoke; 
+
+}
+
+.inputfield input:focus~label, 
+.inputfield input:valid~label{ 
+    font-size: 0.8rem; 
+    top: 10px;
+    transform:translateY(-120%); 
+}
+
+
+.wrapper a { 
+    text-decoration: none;
+    color: #fff;
+
+
+}
+
+
+
+.wrapper a:hover { 
+    text-decoration: underline;
+    color: orchid;
+}
+
+button{ 
+    margin: 30px;
+    background: white;
+    color: black;
+    font-weight:600; 
+    border:none; 
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: medium;
+    border: 15px solid transparent;
+    transition: 0.5s;
+}
+
+button:hover{ 
+    color:orchid; 
+    background:rgba(255,255,255,0.5) ;
+}

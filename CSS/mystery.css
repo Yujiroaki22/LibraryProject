@@ -1,0 +1,166 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar{
+    width: 97.3%;
+}
+body{
+    background-image: url(../img/mysterybg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 1rem ;
+}
+h1{
+
+    text-align: left;
+    position: relative;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 4%;
+}
+h1::after{
+
+    content: " ";
+    position: absolute;
+    display: block;
+    left: 0%;
+    bottom: -8px;
+    width: 37%;
+    height: 4px;
+    background-color:red;
+}
+
+img{
+    width: 80%;
+    height: 280px;
+    overflow: hidden;
+}
+
+img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.roman{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.book{
+    width: 280px;
+    padding: 3rem;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    margin: 1.5rem;
+    background: black;
+    border: 1px solid black;
+    border-color: white;
+}
+
+.bookname{
+    margin-top: 10px;
+    color: red;
+    font-size: larger;
+}
+
+.writter{
+    margin-top: 3px;
+    color: red;
+    font-size: larger;
+}
+
+.book-btn{
+    color: white;
+    display: inline-block;  
+    text-decoration: none;
+    background-color: #123456;
+    padding: 10px 15px 10px 15px;
+    margin-top: 3px;
+    font-size: larger;
+    border-radius: 5px;
+   
+}
+
+#a{
+    width: 100%;
+    height: 350px;
+}
+
+.kyaw1{
+    width: 100%;
+    
+}
+
+ .kyaw2{
+    justify-content: center;
+    display: flex;
+    background: white;
+    align-items: center;
+    color: #383838;
+    border-radius: 6px;
+    padding: 10px, 40px;
+
+ }
+
+ ul{
+    margin: 20px 30px 20px 30px;
+ }
+
+#bli{
+    display: inline-block;
+    margin: 10px;
+    background: #ccc;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 45px;
+    cursor: pointer;
+ }
+
+#bli.active{
+    color: #fff;
+    background-image: linear-gradient(#ff4568,#ff4568);
+    background-repeat: no-repeat;
+}
+
+
+
+ .btn1, .btn11 {
+    display: inline-flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+    background: transparent;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    margin-left: 8%;
+ }
+ 
+
+.btn1 img{
+    width: 24px;
+    margin-right: 15px;
+    width: 20%;
+    height: 8%;
+}
+
+.btn11 img{
+    width: 24px;
+    margin-left: 15px;
+    transform: rotate(180deg);
+    width: 20%;
+    height: 8%;
+}

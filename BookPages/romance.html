@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Knowledge World</title>
+    <link rel="stylesheet" href="../CSS/navi.css">
+    <link rel="stylesheet" href="../CSS/romance.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">KnowledgeWorld</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../About/portfolio.html">About</a></li>
+            <li><a href="../Login/contact.html">Contact</a></li>
+            <li><a href="#"><div class="menu-container">
+            <div class="dropdown" id="discover-dropdown">
+               <button class="dropbtn">Discover</button>
+                
+                <div class="dropdown-content" id="discover-content">
+                  <a href="romance.html">Romance</a>
+                    <a href="action.html">Action</a>
+                    <a href="mystery.html">Mystery & Thriller</a>
+                    <a href="fantasy.html">Fantasy</a>
+                    <a href="history.html">Historical Fiction</a>
+                    <a href="horror.html">Horror</a>
+                    <a href="psychology.html">Psychology</a>
+                    <a href="science.html">Science-Fiction</a>
+
+               </div>
+            </div>
+        </div></a></li>
+            <li><a href="../Login/login.html">Login</a></li>
+             <div class="search-container">
+                <input type="text" id="search-bar" style="width:300px" placeholder="Search books...">
+                <button id="search-button">Search</button>
+            </div>
+        
+        </ul>
+    </nav>
+    <script src="../script/navi.js"></script>
+
+    <img id="a" src="../img/romance4.jpg">
+    
+    <h1>ROMANCE Book Collections</h1>
+
+    <div class="roman">
+
+        <div class="book">
+            <img src="../img/rbook1.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">Me Before You</h4>
+                <p class="writter">Jojo Moyes</p>
+                <a class="book-btn" href="romancebook1.html">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/rbook2.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">The Kiss Quotient</h4>
+                <p class="writter">Helen Hoang</p>
+                <a class="book-btn" href="romancebook2.html">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/rbook3.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">The Notebook</h4>
+                <p class="writter">Nicholas Sparks</p>
+                <a class="book-btn" href="romancebook3.html">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/royalblue.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">Red, White & Royal Blue</h4>
+                <p class="writter">Casey McQuiston</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/japanbook.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">Strange Weather in Tokyo</h4>
+                <p class="writter">Hiromi Kawakami</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/koreabook.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">Temporary Wife Temptation</h4>
+                <p class="writter">Jayci Lee</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/bhone.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">သူငယ်ချင်းလို့ဘဲဆက်၍ခေါ်မည်ခိုင်</h4>
+                <p class="writter">တက္ကသိုလ်ဘုန်းနိုင်</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/han.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">မေမိုးနဲ့မေချစ်သူ</h4>
+                <p class="writter">တက္ကသိုလ်ဟန်ဝင်းအောင်</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/juubook.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">လရဲ့အောက်ဘက် မိုင်အဝေးမှ</h4>
+                <p class="writter">ဂျူး</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="kyaw1">
+
+        <div class="kyaw2">
+            <button class="btn1" onclick="backBtn()"> <img src="../img/images.png">prev </button>
+            <ul>
+                <li id="bli" class="link active" value="1" onclick="activelink()">1</li>
+                <li id="bli" class="link" value="2" onclick="activelink()">2</li>
+                <li id="bli" class="link" value="3" onclick="activelink()">3</li>
+                <li id="bli" class="link" value="4" onclick="activelink()">4</li>
+                <li id="bli" class="link" value="5" onclick="activelink()">5</li>
+                <li id="bli" class="link" value="6" onclick="activelink()">6</li>
+                <li id="bli" class="link" value="7" onclick="activelink()">7</li>
+                <li id="bli" class="link" value="8" onclick="activelink()">8</li>   
+            </ul>
+            <button class="btn11" onclick="nextBtn()"> next <img src="../img/images.png"></button>
+        </div>
+    </div>
+
+    <script>
+
+    let link = document.getElementsByClassName("link");
+
+    let currentValue = 1;
+
+    function activelink(){
+        for (l of link){
+            l.classList.remove("active");
+        }
+        event.target.classList.add("active");
+        currentValue = event.target.value;
+    }
+
+    function backBtn(){
+        if(currentValue > 1){
+            for (l of link){
+            l.classList.remove("active");
+            }
+            currentValue--;
+            link[currentValue-1].classList.add("active");
+        }
+    }
+
+    function nextBtn(){
+        if(currentValue < 8){
+            for (l of link){
+            l.classList.remove("active");
+            }
+            currentValue++;
+            link[currentValue-1].classList.add("active");
+        }
+    }
+    </script>
+</body>
+</html>

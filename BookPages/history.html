@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge World</title>
+    <link rel="stylesheet" href="../CSS/navi.css">
+    <link rel="stylesheet" href="../CSS/history.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">KnowledgeWorld</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../About/portfolio.html">About</a></li>
+            <li><a href="../Login/contact.html">Contact</a></li>
+            <li><a href="#"><div class="menu-container">
+            <div class="dropdown" id="discover-dropdown">
+               <button class="dropbtn">Discover</button>
+                
+                <div class="dropdown-content" id="discover-content">
+                  <a href="romance.html">Romance</a>
+                    <a href="action.html">Action</a>
+                    <a href="mystery.html">Mystery & Thriller</a>
+                    <a href="fantasy.html">Fantasy</a>
+                    <a href="history.html">Historical Fiction</a>
+                    <a href="horror.html">Horror</a>
+                    <a href="psychology.html">Psychology</a>
+                    <a href="science.html">Science-Fiction</a>
+
+               </div>
+            </div>
+        </div></a></li>
+            <li><a href="../Login/login.html">Login</a></li>
+             <div class="search-container">
+                <input type="text" id="search-bar" style="width:300px" placeholder="Search books...">
+                <button id="search-button">Search</button>
+            </div>
+        
+        </ul>
+    </nav>
+    <script src="../script/navi.js"></script>
+    
+    <img id="a" src="../img/history.jpg">
+    
+    <h1>Historical Book Collections</h1>
+
+    <div class="roman">
+
+        <div class="book">
+            <img src="../img/historybook1.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">Persian Fire- The First World Empire and the Battle for the West</h4>
+                <p class="writter">Tom Holland</p>
+                <a class="book-btn" href="../BookPages/historybook1.html">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/historybook2.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">The Yom Kippur War</h4>
+                <p class="writter">Simon Dunstan</p>
+                <a class="book-btn" href="../BookPages/historybook2.html">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/historicalbook3.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">The Rise and Fall of the Third Reich</h4>
+                <p class="writter">William L. Shirer</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/historicalbook4.png">
+            <div class="bookinfo">
+                <h4 class="bookname">Power</h4>
+                <p class="writter"> Roberi Greene</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/historicalbook5.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">The Rape of Nanking</h4>
+                <p class="writter"> Iris Chang</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/historicalbook6.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">Human Acts</h4>
+                <p class="writter">Han Kang</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/historicalbook7.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">The Hidden History of Burma</h4>
+                <p class="writter">U Thant Myint Oo</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/historicalbook8.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">Myanmar: A Political History</h4>
+                <p class="writter">Nehginpao Kipgen</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="../img/historicalbook9.jpg">
+            <div class="bookinfo">
+                <h4 class="bookname">Hiroshima</h4>
+                <p class="writter">John Hersey</p>
+                <a class="book-btn" href="#">Review</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="kyaw1">
+
+        <div class="kyaw2">
+            <button class="btn1" onclick="backBtn()"> <img src="../img/images.png">prev </button>
+            <ul>
+                <li id="bli" class="link active" value="1" onclick="activelink()">1</li>
+                <li id="bli" class="link" value="2" onclick="activelink()">2</li>
+                <li id="bli" class="link" value="3" onclick="activelink()">3</li>
+                <li id="bli" class="link" value="4" onclick="activelink()">4</li>
+                <li id="bli" class="link" value="5" onclick="activelink()">5</li>
+                <li id="bli" class="link" value="6" onclick="activelink()">6</li>
+                <li id="bli" class="link" value="7" onclick="activelink()">7</li>
+                <li id="bli" class="link" value="8" onclick="activelink()">8</li>   
+            </ul>
+            <button class="btn11" onclick="nextBtn()"> next <img src="../img/images.png"></button>
+        </div>
+    </div>
+
+    <script>
+
+    let link = document.getElementsByClassName("link");
+
+    let currentValue = 1;
+
+    function activelink(){
+        for (l of link){
+            l.classList.remove("active");
+        }
+        event.target.classList.add("active");
+        currentValue = event.target.value;
+    }
+
+    function backBtn(){
+        if(currentValue > 1){
+            for (l of link){
+            l.classList.remove("active");
+            }
+            currentValue--;
+            link[currentValue-1].classList.add("active");
+        }
+    }
+
+    function nextBtn(){
+        if(currentValue < 8){
+            for (l of link){
+            l.classList.remove("active");
+            }
+            currentValue++;
+            link[currentValue-1].classList.add("active");
+        }
+    }
+    </script>
+</body>
+</html>
